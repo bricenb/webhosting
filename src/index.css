@@ -1,5 +1,5 @@
 body {
- background-color: aqua;
+ background-color: white;
  text-align: center;
 }
 
@@ -27,7 +27,10 @@ h3 {
   font-family:'Courier New', Courier, monospace;
 }
 
-
+header {
+  background-color: black;
+  color: white;
+}
 
 ol
 {
