@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+
 class List extends React.Component{
 
     handleChange(e) {
@@ -20,6 +21,7 @@ class List extends React.Component{
             items: state.items.concat(newItem),
             text: ''
         }));
+       
     }
     constructor(props) {
         super(props);
@@ -27,6 +29,9 @@ class List extends React.Component{
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    
+    
     
 
     render () {
@@ -52,16 +57,19 @@ class List extends React.Component{
     }
    
 }
+
+
 class TodoList extends React.Component {
     render() {
         return(
             <ol>
                 {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
+                    <li key={item.id}>{item.text}<input type="checkbox"></input></li>
                 ))}
             </ol>
         );
     }
 }
+
 
 export default List;

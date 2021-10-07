@@ -10,7 +10,6 @@ import Dropdow from './components/dropdow';
 ReactDOM.render(
   <React.StrictMode>
     <List />
-    <Dropdow />
   </React.StrictMode>,
   document.getElementById('root')
 );
